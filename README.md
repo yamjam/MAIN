@@ -1,2 +1,8 @@
 # hello-world
-myFirstTime
+package helloWorld
+
+public static void (String [] args){
+
+  System.out.println("Hello World")
+
+}
