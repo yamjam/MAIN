@@ -1,0 +1,61 @@
+package workSpace;
+
+//PROJECT CHANGE_MAKER
+//MUHAMMAD KAZI
+//CLAIM ACADEMY JAVA BOOTCAMP
+//INSTRUCTOR: LAMAR
+
+
+import java.util.Scanner;
+
+public class ChangeMaker {
+
+	//create double variables 
+	static double quarters, dimes, nickels, pennies, changeDue, modQuarters, modNickles, modDimes, modPennies;
+	
+	public static void main(String[] args) {
+
+		//import scanner for user input
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Enter the amount paid: ");
+		double amountGiven = input.nextDouble();
+		
+
+		// assign values to the variables that were created earlier
+		
+		quarters = amountGiven/.25;
+		amountGiven %= .25;     
+		dimes = amountGiven/.10;
+		amountGiven %= .10;    
+		nickels = amountGiven/.05;
+		amountGiven %= .05;    
+		pennies = amountGiven/.01;
+		amountGiven %= .01;    
+	
+		
+		System.out.printf("Quarters: %.2f%nDimes: %.2f%nNickels: %.2f%nPennies: %.2f%n", quarters,dimes,nickels,pennies);
+		
+		
+		
+		input.close();
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+
+}
